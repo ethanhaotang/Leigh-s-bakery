@@ -1,0 +1,52 @@
+.container-full{
+  margin-top: 200px;
+}
+
+
+
+.container-full .address{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 20px;
+  h6{
+    font-size: 30px;
+  }
+}
+
+.address img{
+  width: 90px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+
+  &:hover{
+    width: 120px;
+  transition: all 1s;
+  }
+}
+
+
+.social{
+  height: 173px;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3{
+    text-transform: capitalize;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 30px;
+  }
+  a{
+  
+    font-size: 30px;
+    color: black;
+    i{
+      padding: 7px;
+    }
+  }
+}
+

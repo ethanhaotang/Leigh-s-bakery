@@ -1,0 +1,110 @@
+* {
+  text-transform: capitalize;
+  box-sizing: border-box;
+  font-family: "Nanum Pen Script", cursive;
+}
+.head h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  font-size: 60px;
+}
+.box-container {
+  display: flex;
+}
+.message {
+  margin-left: 350px;
+
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+}
+.message input {
+  border: none;
+  background-color: transparent;
+  padding: 10px 10px;
+  width: 100%;
+  box-shadow: 0 2px black;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+::placeholder {
+  color: black;
+}
+
+.text-input:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.send {
+  display: block;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  background-color: rgb(15, 7, 1);
+  color: white;
+  margin-top: 30px;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.contact-info {
+  width: 100%;
+  margin-left: 350px;
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 45px;
+  }
+}
+
+.contact-info ul li {
+  list-style: none;
+  display: flex;
+  i {
+    font-size: 40px;
+    padding-right: 25px;
+    border-right: 1px solid rgb(92, 77, 77);
+  }
+  .text {
+    margin-left: 30px;
+  }
+  h6 {
+    font-weight: 900;
+    font-size: 42px;
+  }
+  span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .message {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .message {
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+  .contact-info {
+    margin-left: 10px;
+  }
+}

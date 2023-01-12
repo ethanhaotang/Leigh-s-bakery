@@ -1,0 +1,296 @@
+// @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar-style{
+  text-transform: uppercase;
+}
+
+.navbar-header img{
+  width: 90px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+
+  &:hover{
+    width: 120px;
+  transition: all 1s;
+  }
+}
+
+.icon-bar{
+  background-color: rgba(247, 180, 98, 0.845);
+}
+
+li a{
+  color: black;
+}
+
+
+.detail{
+  height: 100vh;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+
+.detail::before{
+content:"" ;
+background-image: url(../backgroundImg/about.jpeg);
+background-size: cover;
+position: absolute;
+top: 0px;
+bottom: 0px;
+right: 0px;
+left:0px;
+opacity: 0.6;
+border-radius: 10px;
+}
+
+.detail h1{
+  position: absolute;
+  top:3%;
+  left: 68%;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 80PX;
+  color: rgb(19, 8, 1);
+  text-shadow: 3px 3px rgb(31, 30, 30);
+  -webkit-text-stroke: 0.4vw ;
+}
+
+.detail h3{
+position: absolute;
+    top: 60%;
+    box-sizing:border-box;
+    left: 10%;
+    width: 600px;
+    font-size: 27px;
+    font-weight: 700;
+    color: black;
+    font-family: 'Mukta', sans-serif;
+  }
+
+
+
+  .detail h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color:wheat;
+    -webkit-text-stroke: 0vw #383d52;
+    overflow: hidden;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animate {
+    0%,10%,80%
+    {
+      width: 0;
+    }
+  
+    40%,70%
+    {
+      width:100%;
+    }
+  }
+
+
+
+  @media screen and (max-width:1700px) {
+    .detail::before{
+      content:"" ;
+      background-image: url(../backgroundImg/about.jpeg);
+      background-size:100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+      left:0px;
+      }
+      .detail h3{
+        position: absolute;
+            top: 45%;
+            box-sizing:border-box;
+            left: 6%;
+            width: 480px;
+            font-size: 20px;
+          }
+
+  }
+  @media screen and (max-width:1500px) {
+ .detail{
+  height: 700px;
+ }
+    .detail::before{
+      content:"" ;
+      background-image: url(../backgroundImg/about.jpeg);
+      background-size:100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+      left:0px;
+
+   
+
+      }
+      .detail h3{
+        position: absolute;
+            top: 45%;
+            box-sizing:border-box;
+            left: 5%;
+            width: 400px;
+            font-size: 20px;
+          }
+
+  }
+  @media screen and (max-width:1350px) {
+    .detail{
+      height: 600px;
+     }
+    .detail::before{
+      content:"" ;
+      background-image: url(../backgroundImg/about.jpeg);
+      background-size:100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+      left:0px;
+      opacity: 0.6;
+      }
+      .detail h1{
+        position: absolute;
+        top:3%;
+        left: 68%;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 50PX;
+        color: rgb(19, 8, 1);
+        text-shadow: 2px 2px rgb(31, 30, 30);
+      }
+      .detail h3{
+        position: absolute;
+            top: 87%;
+            box-sizing:border-box;
+            left: 5%;
+            width: 400px;
+            font-size: 20px;
+          }
+
+  }
+
+  @media screen and (max-width:1000px) {
+    .detail{
+      height: 500px;
+     }
+    .detail::before{
+      content:"" ;
+      background-image: url(../backgroundImg/about.jpeg);
+      background-size:100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+      left:0px;
+      opacity: 0.6;
+      }
+      .detail h1{
+        position: absolute;
+        top:3%;
+        left: 68%;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 50PX;
+        color: rgb(19, 8, 1);
+        text-shadow: 2px 2px rgb(31, 30, 30);
+      }
+      .detail h3{
+        position: absolute;
+            top: 85%;
+            box-sizing:border-box;
+            left: 5%;
+            width: 400px;
+            font-size: 20px;
+          }
+
+  }
+
+
+  @media screen and (max-width:800px) {
+
+      .detail::before{
+        content:"" ;
+        background-image: none;
+        background-size:100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left:0px;
+        opacity: 0.6;
+        }
+        .detail h1{
+          position: absolute;
+          top:3%;
+          left: 25%;
+          font-family: 'Nanum Pen Script', cursive;
+          font-size: 50PX;
+          color: rgb(19, 8, 1);
+          text-shadow: 2px 2px rgb(31, 30, 30);
+        }
+        .detail h3{
+          position: absolute;
+              top: 21%;
+              box-sizing:border-box;
+              left: 25%;
+              width: 270px;
+              font-size: 20px;
+            }
+    }
+  
+    @media screen and (max-width:450px){
+      .detail::before{
+        content:"" ;
+        background-image: none;
+        background-size:100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left:0px;
+        opacity: 0.6;
+        }
+        .detail h1{
+          position: absolute;
+          top:3%;
+          left: 5%;
+          font-family: 'Nanum Pen Script', cursive;
+          font-size: 50PX;
+          color: rgb(19, 8, 1);
+          text-shadow: 2px 2px rgb(31, 30, 30);
+        }
+        .detail h3{
+          position: absolute;
+              top: 21%;
+              box-sizing:border-box;
+              left: 5%;
+              width: 270px;
+              font-size: 20px;
+            }
+    }
